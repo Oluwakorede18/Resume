@@ -1,0 +1,623 @@
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    .grid-container {}
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    nav {
+        position: fixed;
+        color: red;
+        background-color: red;
+        width: 100%;
+        padding: 10px;
+        margin-top: -20px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .onSoll {
+        background-color: #1748E2;
+        box-shadow: 0px 4px 12px -4px #111;
+    }
+    
+    .nav {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .nav li {
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        color: #111;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    #ab {
+        margin-left: 50px;
+    }
+    
+    .nav li a:hover {
+        color: yellow;
+    }
+    /* #ab {
+        margin-left: 250px;
+    } */
+    
+    .profile {
+        margin-left: 20px;
+        height: 100%;
+        width: 35%;
+        height: 100%;
+        margin: auto;
+        width: 60%;
+        padding: 50px;
+        margin-top: 20px;
+    }
+    
+    .image {
+        width: 40%;
+        padding: 10px;
+        margin-left: 80px;
+    }
+    
+    .image img {
+        width: 150px;
+        margin: 0 auto;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 100%;
+        border: 5px solid grey;
+    }
+    
+    .intro h1 {
+        text-align: center;
+    }
+    
+    .typed-text {
+        background-image: linear-gradient(to right, #1748E2, #E217AD 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .cursor {
+        display: inline-block;
+        width: 3px;
+        margin-left: 0.1rem;
+        animation: blink 1s infinite;
+        background-color: #1748E2;
+        height: 45px;
+    }
+    
+    span .cursor.typing {
+        animation: none;
+    }
+    
+    @keyframes blink {
+        0% {
+            background-color: #1748E2;
+        }
+        49% {
+            background-color: #1748E2;
+        }
+        50% {
+            background-color: transparent;
+        }
+        99% {
+            background-color: transparent;
+        }
+        100% {
+            background-color: #1748E2;
+        }
+    }
+    
+    .intro p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .buttons {
+        margin-top: 20px;
+    }
+    
+    .buttons ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    .btn {
+        border: none;
+        background-color: #1748E2;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-size: 18px;
+        margin-left: 7px;
+        box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+    /* padding: 12px 19px;
+  ba    ckground: #1748E2;
+  bo    rder-radius: 3px;
+    border: none;
+    color: #fff;
+  cu    rsor: pointer;
+  tr    ansition: all 0.3s ease 0s;
+    margin-left: 7px;  
+    box-shadow: rgba(16,150,273,.25) 0px 5px 15px; */
+    
+    .btn:hover {
+        animation: pulse 1s alternate ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+        from {
+            transform: scale(1, 1);
+            box-shadow: none;
+        }
+        to {
+            transform: scale(1.05, 1.05);
+            box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+    
+    .about {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        background-color: pink;
+        margin-top: 80px;
+    }
+    
+    .about h1 {}
+    
+    .abo p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .icon-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .skill-icon {
+        margin-top: 10px;
+        box-shadow: 0px 4px 12px -4px #111;
+        border-radius: 10%;
+        padding: 4px 4px 0 4px;
+    }
+    
+    .skills h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .line {
+        width: 0px;
+        height: 100px;
+        border: 1px solid grey;
+        background-color: grey;
+        margin: 0 auto;
+        border-width: thin;
+    }
+    
+    .icons {
+        margin-top: 50px;
+    }
+    
+    .work-icon {
+        background-color: #1748E2;
+        border-radius: 90%;
+        padding: 3px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    .experience {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        margin: auto;
+        margin-top: 20px;
+        background-color: red;
+    }
+    
+    .experience hr {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .experience-wrap {
+        border: none;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 90px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        margin-left: -20px;
+    }
+    
+    .details {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+        display: flex;
+    }
+    
+    .content {
+        margin-left: 10px;
+    }
+    
+    .content h6 {
+        color: grey;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+    
+    .content span {
+        display: flex;
+    }
+    
+    .content span h4 {
+        margin-right: 30px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .content span h5 {
+        margin-top: 0px;
+        color: grey;
+        margin-left: 10px;
+    }
+    
+    .content p {
+        font-size: 13px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    
+    hr {
+        background-color: #1748E2;
+        background: #1748E2;
+        border-radius: 500px 10px 500px 10px;
+        border: 2px solid #1748E2;
+        margin: 0 100px 10px 20px;
+    }
+    
+    .details {
+        margin-left: 10px
+    }
+    /* RESET RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    /* This is for night and light mode*/
+    /* :root {
+    --white: #afafaf;
+    --red: #e31b23;
+    --bodyColor: #292a2b;
+    --borderFormEls: hsl(0, 0%, 10%);
+    --bgFormEls: hsl(0, 0%, 14%);
+  --bgFormElsFocus: hsl(0, 7%, 20%);
+}   */
+    
+    .alert {
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: #1748E2;
+        opacity: 50%;
+        color: #111;
+    }
+    
+    .closebtn {
+        margin-left: 15px;
+        color: #111;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+        color: black;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    #contact h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    .contact {
+        margin-top: 20px;
+    }
+    
+    .contact {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    
+    .phone {
+        height: 59px;
+        margin-left: 10px;
+    }
+    
+    form input,
+    form textarea,
+    form button {
+        font-size: 100%;
+        width: 100%;
+        line-height: 1.5;
+        padding: 15px 10px;
+        border: 1px solid var(--borderFormEls);
+        color: var(--white);
+        background: var(--bgFormEls);
+        transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3subic-bezier(0.57, 0.21, 0.69, 1.25);
+    }
+    
+    textarea {
+        height: 170px;
+        margin-top: -10px;
+        margin-bottom: 5px;
+    }
+    
+     ::placeholder {
+        opacity: 1;
+    }
+    /*to prevent the asterisc from repeating when required*/
+    
+    *:required {
+        background-repeat: no-repeat;
+        background-position: center right 12px;
+        background-size: 15px 15px;
+    }
+    
+    *:required {
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+    }
+    
+    form button {
+        margin-bottom: 30px;
+    }
+    /* FORM BTNS
+––  –––––––––––––––––––––––––––––––––––––––––––––––– */
+    /*  MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    /* @media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  } 
+  
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center; 
+    } 
+      
+        .my-form .g rid > *:not(:last-child) {
+      }
+     
+        .my-form .required-msg {
+        display: block;
+      } 
+     }
+        @media screen and (min-width: 541px) {
+      .my-form input[type="checkbox"] + label::before {
+         top: 50%;
+        transform: translateY(-50%);
+     
+      .my-form  input[type="checkbox"]:checked + label::after {
+         top: 3px;  }
+        }  */
+    
+    #border {
+        border: 1px solid #1748E2;
+    }
+    
+    @media screen and (min-width:900px) {
+        .left-side {
+            width: 50%;
+            position: fixed;
+            float: left;
+        }
+        .right-side {
+            background-color: green;
+            width: 50%;
+            float: right;
+        }
+        .hide {
+            display: none;
+        }
+        .hidden {
+            display: contents;
+            background-color: #E217AD;
+        }
+        .profile {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 100px;
+        }
+        .image img {
+            margin-left: 50%;
+        }
+    }
+    
+    @media screen and (max-width:650px) {
+        #ab {
+            margin-left: 0;
+        }
+        .image img {
+            margin-left: -20px;
+        }
+    }
+    
+    @media screen and (max-width:580px) {
+        .image img {
+            margin-left: -40px;
+        }
+    }
+    
+    @media screen and (max-width:546px) {
+        .image img {
+            margin-left: -60px;
+            margin-top: 70px;
+        }
+        .intro h1 {
+            font-size: 20px;
+        }
+        .cursor {
+            height: 30px;
+        }
+        .intro p {
+            font-size: 15px;
+            width: 250px;
+            margin-left: -30px;
+        }
+        .buttons ul li a button {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:459px) {
+        .image img {
+            margin-left: -80px;
+        }
+        .intro p {
+            font-size: 12px;
+        }
+        .skills h2 {
+            font-size: 20px;
+        }
+    }
+    
+    @media screen and (max-width:409px) {
+        .image img {
+            margin-left: -90px;
+        }
+        .intro p {
+            font-size: 11px;
+            width: 200px;
+        }
+        .skills h2 {
+            font-size: 20px;
+        }
+        .typed-text {
+            font-size: 16px;
+        }
+        .intro h1 {
+            font-size: 18px;
+        }
+        .cursor {
+            height: 28px;
+        }
+        .skills h2 {
+            font-size: 16px;
+        }
+        .buttons ul li a button {
+            font-size: 10px;
+        }
+    }
+    
+    @media screen and (max-width:362px) {
+        .image img {
+            margin-left: -100px;
+        }
+        .typed-text {
+            font-size: 15px;
+        }
+        .cursor {
+            height: 26px;
+            margin-top: 2px;
+        }
+        .intro h1 {
+            font-size: 16px;
+        }
+    }
+    /*  @media screen and (max-width:794px) {
+            .nav li {
+                justify-content: space-evenly;
+                text-align: center;
+                margin-left: 100px;
+            }
+            #ab {}
+            .con {}
+            .experi ence {
+                width: margin-left: 150px;
+            }
+        }
+    }
+    @media screen and (max-width:615px) {
+        .nav li {
+            justify-content: space-evenly;
+            text-align: center;
+            margin-left: 100px;
+        }
+        #ab {
+            margin-left: 0px;
+        }
+        .con {
+            margin-left: 10px;
+        }
+        .experience {
+            width: 100%;
+            margin-left: 150px;
+        }
+    }
+    @media screen and (max-width:400px) {
+        .intro h1 {
+            font-size: 17px;
+            text-align: left;
+        }
+        .profile {
+            background-color: red;
+        }
+        .cursor {
+            height: 20px;
+        }
+        .intro p {
+            font-size: 15px;
+            text-align: left;
+            margin-left: 9px;
+            width: 100%;
+        }
+    } */

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+        /* .left-side {
+            width: 50%;
+            position: fixed;
+            float: left;
+        }
+        
+        .right-side {
+            background-color: green;
+            width: 50%;
+            float: right;
+        }
+        
+        .p {}*/
+    </style>
+</head>
+
+<body>
+    <!-- <div class="contact">
+                <form class="my-form" @submit.prevent="sendEmail">
+                    <a id="contact">
+                        <h1>Get in Touch </h1>
+                    </a>
+
+
+
+
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> Your message has been sucessfully sent
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Your Name" id="border" required>
+                        <input type="tel" name="number" placeholder="Your Number" id="border" class="phone">
+                    </div>
+                    <input type="email" name="email" placeholder="Your Email" id="border" class="email" required>
+                    <textarea name="message" cols="30" rows="5" placeholder="Message" id="border" required>
+            
+          </textarea>
+
+                    <div class="grid grid-3">
+                        <button id="border" class="btn-grid" type="submit">
+           SUBMIT
+          </button>
+                    </div>
+
+                </form>
+
+            </div> -->
+
+    <!-- <div class="grid-container">
+        <nav>
+            <ul class=nav>
+                <li><a id="ab" href="#about">About Me</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+        </nav>
+        <div class="profile">
+
+            <div class="image">
+                <img src="./picture.jpg" alt="">
+            </div>
+            <div class="intro">
+                <h1>Hi, I'm Oluwakorede Oseni, a</h1>
+
+                <h1><span class="typed-text">{{typeValue}}</span> <span class="cursor" :class="{'typing':typeStatus}">&nbsp;</span> </h1>
+                <p>Im a software engineering student currently brewing my intrests in web development but aspiring to be a cyber security engineer.</p>
+
+                <div class="skills">
+                    <h2>Primary Skills</h2>
+
+                    <div class="icon-list">
+                        <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/vue-js.png" /></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/javascript.png" /></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/html-5--v1.png" /></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/css.png" /></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/python--v1.png" /></div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="buttons">
+                    <ul>
+                        <li><a href="#contact"><button class="btn">Hire Me</button></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class=" gree">
+
+            <div class="about">
+                <a id="about">
+                    <h1>About Me </h1>
+                </a>
+
+                <hr>
+                <p>Hi, I'm a 3rd year Software Engineering student,Programmer and Front-End developer. WIth one year experience in HTML,CSS and JavaScript</p>
+            </div>
+            <div class="pop">
+                <a id="exp">
+                    <h1>Experience</h1>
+                </a>
+                <hr>
+            </div>
+
+            <div class="experience">
+
+                <div class="details">
+                    <div class="icons">
+                        <div class="work-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="con">
+                        <h6> May 2021 - August 2021 </h6>
+                        <span><h4>MARKETING INTERN </h4> <h5> Bolt</h5></span>
+
+                        <p>Fulfilled my daily tasks assigned by my success managers. Localized blog posts to be posted on the bolt website. Created emails, modals, and push notifications to be sent to riders and drivers. Created a campaign promoting the
+                            benefits and perks of using the VOIP feature in the bolt app.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="details">
+                    <div class="icons">
+                        <div class="work-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="con">
+                        <h6> May 2021 - August 2021 </h6>
+                        <span><h4>MARKETING INTERN </h4> <h5> Bolt</h5></span>
+
+                        <p>Fulfilled my daily tasks assigned by my success managers. Localized blog posts to be posted on the bolt website. Created emails, modals, and push notifications to be sent to riders and drivers. Created a campaign promoting the
+                            benefits and perks of using the VOIP feature in the bolt app.
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="details">
+                    <div class="icons">
+                        <div class="work-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="con">
+                        <h6> May 2021 - August 2021 </h6>
+                        <span><h4>MARKETING INTERN </h4> <h5> Bolt</h5></span>
+
+                        <p>Fulfilled my daily tasks assigned by my success managers. Localized blog posts to be posted on the bolt website. Created emails, modals, and push notifications to be sent to riders and drivers. Created a campaign promoting the
+                            benefits and perks of using the VOIP feature in the bolt app.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="details">
+                    <div class="icons">
+                        <div class="work-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="con">
+                        <h6> May 2021 - August 2021 </h6>
+                        <span><h4>MARKETING INTERN </h4> <h5> Bolt</h5></span>
+
+                        <p>Fulfilled my daily tasks assigned by my success managers. Localized blog posts to be posted on the bolt website. Created emails, modals, and push notifications to be sent to riders and drivers. Created a campaign promoting the
+                            benefits and perks of using the VOIP feature in the bolt app.
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="container">
+                <form class="my-form" @submit.prevent="sendEmail">
+                    <a id="contact">
+                        <h1>Get in Touch </h1>
+                    </a>
+
+
+
+
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> Your message has been sucessfully sent
+                    </div>
+                    <div class="grid grid-2">
+                        <input type="text" v-model="name" name="name" placeholder="Your Name" id="border" required>
+                        <input type="tel" v-model="number" name="number" placeholder="Your Number" id="border" class="phone">
+                    </div>
+                    <input type="email" v-model="email" name="email" placeholder="Your Email" id="border" class="email" required>
+                    <textarea name="message" v-model="message" cols="30" rows="5" placeholder="Message" id="border" required>
+            
+          </textarea>
+
+                    <div class="grid grid-3">
+                        <button id="border" class="btn-grid" type="submit">
+            <span class="back">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+            </span>
+            <span class="front">SUBMIT</span>
+          </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="p">
+
+
+        <div class="left-side">
+            <nav class=hide>
+                <ul class=nav>
+                    <li><a id="ab" href="#about">About Me</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="profile">
+
+                <nav class="hidden">
+                    <ul class=nav>
+                        <li><a id="ab" href="#about">About Me</a></li>
+                        <li><a href="#exp">Experience</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+
+                </nav>
+                <div class="image">
+                    <img src="./picture.jpg" alt="">
+                </div>
+                <div class="intro">
+                    <h1>Hi, I'm Oluwakorede Oseni, a</h1>
+
+                    <h1><span class="typed-text"></span> <span class="cursor">&nbsp;</span> </h1>
+                    <p>Im a software engineering student currently brewing my intrests in web development but aspiring to be a cyber security engineer.</p>
+
+                    <div class="skills">
+                        <h2>Primary Skills</h2>
+
+                        <div class="icon-list">
+                            <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/vue-js.png" /></div>
+                            <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/javascript.png" /></div>
+                            <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/html-5--v1.png" /></div>
+                            <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/css.png" /></div>
+                            <div class="skill-icon"><img src="https://img.icons8.com/color/26/000000/python--v1.png" /></div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="buttons">
+                        <ul>
+                            <li>
+                                <a href="./Korede’s Resume.pdf" download><button class="btn">Download CV</button></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="right-side">
+
+            <div class="about">
+                <a id="about">
+                    <h1>About Me </h1>
+                </a>
+
+                <hr>
+                <p>I am a result-oriented student of software engineering, aiming to leverage on my knowledge of , web design and programming to successfully fill the IT intern role at your company. I am proficient in the English language and possess good
+                    communication and interpersonal skills. I am a team player frequently praised as efficient by my peers and I can be relied upon to contribute to the growth and achievement of your company’s goals.</p>
+            </div>
+            <div class="experience">
+                <a id="exp">
+                    <h1>Experience</h1>
+                </a>
+                <hr>
+
+
+                <div class="experience-wrap">
+
+                    <div class="details">
+                        <div class="icons">
+                            <div class="work-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content">
+                            <h6> May 2021 - August 2021 </h6>
+                            <span><h4>MARKETING INTERN </h4> <h5> Bolt</h5></span>
+
+                            <p>Fulfilled my daily tasks assigned by my success managers. Localized blog posts to be posted on the bolt website. Created emails, modals, and push notifications to be sent to riders and drivers. Created a campaign promoting
+                                the benefits and perks of using the VOIP feature in the bolt app.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <div class="work-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content">
+                            <h6> July 2020 - September 2020 </h6>
+                            <span><h4> INTERN </h4> <h5> RegencyNem Insurance</h5></span>
+
+                            <p>Here I fulfilled daily tasks set out by supervisors.Created images for social media post and helped with updates of the company's systems
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="details">
+                        <div class="icons">
+                            <div class="work-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content">
+                            <h6> July 2019 - August 2019 </h6>
+                            <span><h4>RECEPTIONIST </h4> <h5> Virtue Ghana Limited </h5></span>
+
+                            <p> Here I welcomed visitors and guests ensuring they are at ease and comfortable then usher them to the specific teams, units, or staff they are required to see.Notify appropriate teams of clients/visitors’ arrival.Attentively
+                                receive and attend to all clients’ enquiries visit
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="contact">
+                <form action="https://formsubmit.co/oluwakoredeoseni@gmail.com" method="POST">
+                    <a id="contact">
+                        <h1>
+                            Get in Touch
+                        </h1>
+                    </a>
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> Your message has been sucessfully sent
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Your Name" id="border" required>
+                        <input type="tel" name="number" placeholder="Your Number" id="border" class="phone">
+                    </div>
+                    <input type="email" name="email" placeholder="Your Email" id="border" class="email" required>
+                    <textarea name="message" cols="30" rows="5" placeholder="Message" id="border" required>
+            
+          </textarea>
+                    <button id="border" class="btn-grid" type="submit">
+           SUBMIT
+          </button>
+
+
+
+                </form>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
