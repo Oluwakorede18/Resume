@@ -137,3 +137,11 @@ function eraseText() {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(typeText, newTextDelay + 200)
 });
+
+
+
+window.addEventListener('scroll', function() {
+    let nav = this.document.querySelector('nav')
+
+    nav.classList.toggle('onScroll', window.scrollY > 10);
+})

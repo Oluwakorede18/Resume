@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
     <style>
@@ -250,14 +252,6 @@
 
             <div class="profile">
 
-                <nav class="hidden">
-                    <ul class=nav>
-                        <li><a id="ab" href="#about">About Me</a></li>
-                        <li><a href="#exp">Experience</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-
-                </nav>
                 <div class="image">
                     <img src="./picture.jpg" alt="">
                 </div>
@@ -297,6 +291,14 @@
 
         </div>
         <div class="right-side">
+
+            <nav class=hidden>
+                <ul class=nav>
+                    <li><a id="ab" href="#about">About Me</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
 
             <div class="about">
                 <a id="about">
@@ -376,30 +378,23 @@
 
 
             <div class="contact">
-                <form action="https://formsubmit.co/oluwakoredeoseni@gmail.com" method="POST">
-                    <a id="contact">
-                        <h1>
-                            Get in Touch
-                        </h1>
-                    </a>
-                    <div class="alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> Your message has been sucessfully sent
-                    </div>
-                    <div class="flex">
-                        <input type="text" name="name" placeholder="Your Name" id="border" required>
-                        <input type="tel" name="number" placeholder="Your Number" id="border" class="phone">
-                    </div>
-                    <input type="email" name="email" placeholder="Your Email" id="border" class="email" required>
-                    <textarea name="message" cols="30" rows="5" placeholder="Message" id="border" required>
-            
-          </textarea>
-                    <button id="border" class="btn-grid" type="submit">
-           SUBMIT
-          </button>
+
+                <div class="socials">
+                    <a href="" class="link" id=git><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/kay_ttt_/" class="link" id=ig><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/oluwakorede-oseni-1162ab212/" class="link" id=link><i class="fab fa-linkedin-in"></i></i></a>
 
 
 
-                </form>
+                </div>
+
+                <div class="mail">
+                    <a href="mailto:oluwakoredeoseni@gmail.com">oluwakoredeoseni@gmail.com</a>
+                    <a href="mailto:oluwakoredeoseni@gmail.com" id=mail><i class="far fa-envelope"></i></a>
+
+                </div>
+
+
             </div>
 
 
