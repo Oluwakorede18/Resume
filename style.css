@@ -1,6 +1,4 @@
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    .grid-container {}
-    
     * {
         padding: 0;
         margin: 0;
@@ -40,7 +38,7 @@
     
     .nav li a {
         text-decoration: none;
-        color: #111;
+        color: #ffff;
         justify-content: space-between;
         text-align: center;
     }
@@ -140,15 +138,6 @@
         box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
         padding: 10px;
     }
-    /* padding: 12px 19px;
-  ba    ckground: #1748E2;
-  bo    rder-radius: 3px;
-    border: none;
-    color: #fff;
-  cu    rsor: pointer;
-  tr    ansition: all 0.3s ease 0s;
-    margin-left: 7px;  
-    box-shadow: rgba(16,150,273,.25) 0px 5px 15px; */
     
     .btn:hover {
         animation: pulse 1s alternate ease-in-out infinite;
@@ -296,29 +285,21 @@
     .details {
         margin-left: 10px
     }
-    /* RESET RULES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    /* This is for night and light mode*/
-    /* :root {
-    --white: #afafaf;
-    --red: #e31b23;
-    --bodyColor: #292a2b;
-    --borderFormEls: hsl(0, 0%, 10%);
-    --bgFormEls: hsl(0, 0%, 14%);
-  --bgFormElsFocus: hsl(0, 7%, 20%);
-}   */
     
     .onScroll {
-        background-image: linear-gradient(to right, #1748E2, #E217AD 100%);
+        background: rgb(130, 46, 198);
+        ;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     
     .socials {
+        display: flex;
         justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     
     .link {
-        margin-left: 150px;
         font-size: 20px;
     }
     
@@ -393,7 +374,7 @@
             padding: 10px;
             margin-top: 0px;
             width: 50%;
-            background-image: linear-gradient(to right, #1748E2, #E217AD 100%);
+            background: rgb(130, 46, 198);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         .onScroll {
@@ -476,6 +457,9 @@
         .buttons ul li a button {
             font-size: 10px;
         }
+        .content h5 {
+            font-size: 4px;
+        }
     }
     
     @media screen and (max-width:362px) {
@@ -493,51 +477,3 @@
             font-size: 16px;
         }
     }
-    /*  @media screen and (max-width:794px) {
-            .nav li {
-                justify-content: space-evenly;
-                text-align: center;
-                margin-left: 100px;
-            }
-            #ab {}
-            .con {}
-            .experi ence {
-                width: margin-left: 150px;
-            }
-        }
-    }
-    @media screen and (max-width:615px) {
-        .nav li {
-            justify-content: space-evenly;
-            text-align: center;
-            margin-left: 100px;
-        }
-        #ab {
-            margin-left: 0px;
-        }
-        .con {
-            margin-left: 10px;
-        }
-        .experience {
-            width: 100%;
-            margin-left: 150px;
-        }
-    }
-    @media screen and (max-width:400px) {
-        .intro h1 {
-            font-size: 17px;
-            text-align: left;
-        }
-        .profile {
-            background-color: red;
-        }
-        .cursor {
-            height: 20px;
-        }
-        .intro p {
-            font-size: 15px;
-            text-align: left;
-            margin-left: 9px;
-            width: 100%;
-        }
-    } */
